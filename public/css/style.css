@@ -3,7 +3,7 @@
 :root {
   --black: #1c1c1c;
   --gray: #7e7e7e;
-  -gray-light: #e4e4e4;
+  --gray-light: #e4e4e4;
   --red: #b30000;
   --font-size-base: 1rem;
   --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
@@ -277,9 +277,6 @@ img {
   visibility: hidden;
   transform: translateY(-100);
   position: absolute;
-  top: 4px;
-  left: 0;
-  right: 0;
 }
 
 .searchBar.open {
@@ -295,10 +292,10 @@ img {
 #searchClose {
   position: absolute;
   display: flex;
-  top: 0;
+  top: 7px;
   right: 0;
   color: var(--gray-light);
-  padding: 12px;
+  padding: 10px;
   cursor: pointer;
 }
 
