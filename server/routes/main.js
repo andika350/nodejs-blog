@@ -41,8 +41,6 @@ router.get("/about", (req, res) => {
   res.render("about");
 });
 
-module.exports = router;
-
 //GET Post by :id
 router.get("/post/:id", async (req, res) => {
   try {
@@ -86,6 +84,10 @@ router.post("/search", async (req, res) => {
     console.log(error);
   }
 });
+
+
+
+module.exports = router;
 
 //GET home, no pagination
 // router.get("", async (req, res) => {
