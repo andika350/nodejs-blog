@@ -34,6 +34,10 @@ h3 {
   font-size: var(--font-size-md);
 }
 
+img {
+  object-fit: contain;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -228,23 +232,24 @@ img {
   }
 }
 
-.article-ul li {
+.article-ul li a{
   font-size: 24px;
   cursor: pointer;
-  transition: filter 0.1s;
+  transition: background-color 0.25s;
+  padding: 5px;
 }
 
 .article-ul li:not(:last-child) {
   border-bottom: 1px solid var(--gray-light);
 }
 
-.article-ul li:hover {
-  filter: none;
+.article-ul li a:hover{
+  background-color: #1c1c1c;
+  color: white;
+  border-radius: 3px;
 }
 
-.article-ul:hover li {
-  filter: blur(3px);
-}
+
 
 .article-ul:hover li:hover {
   filter: none;
