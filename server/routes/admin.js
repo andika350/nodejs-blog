@@ -29,11 +29,11 @@ const authMiddleware = (req, res, next) => {
 router.get("/admin", async (req, res) => {
   try {
     const locals = {
-      title: "Admin",
+      title: "Admin Login",
       description: "Simple Blog created with Nodejs, Express & Mongodb",
     };
 
-    res.render("admin/index", { locals, layout: adminLayout });
+    res.render("admin/index", { locals });
   } catch (error) {
     console.log(error);
   }

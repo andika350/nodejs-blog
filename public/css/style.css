@@ -132,7 +132,16 @@ img {
   grid-area: button;
   display: flex;
   justify-content: end;
+  align-items: center;
   position: relative;
+}
+
+.loginBtn img, .logoutBtn img {
+  max-width: 20px;
+}
+
+.loginBtn a, .logoutBtn{
+ text-decoration: none; 
 }
 
 .header__button button {
