@@ -31,7 +31,7 @@ router.get("", async (req, res) => {
       data,
       current: page,
       nextPage: hasNextPage ? nextPage : null,
-      currentRoute: '/'
+      currentRoute: "/",
     });
   } catch (error) {
     console.log(error);
@@ -54,7 +54,6 @@ router.get("/post/:id", async (req, res) => {
     const locals = {
       title: data.title,
       description: "Simple Blog created with Nodejs, Express & Mongodb",
-      
     };
 
     res.render("post", { locals, data, currentRoute: `/post/${slug}` });
@@ -89,11 +88,12 @@ router.post("/search", async (req, res) => {
   }
 });
 
-router.use((req, res) => {
-  res.render("404")
-})
-
-
+//Contact Page
+router.get("/contact", (req, res) => {
+  res.render("contact", {
+    currentRoute: `/contact`,
+  });
+});
 
 module.exports = router;
 
